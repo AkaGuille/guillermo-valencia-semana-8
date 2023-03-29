@@ -208,3 +208,18 @@ let myCars = [{
         "color": "medium green"
     }
 ];
+
+
+async function sendCard(){
+    console.log("post hecho");
+    const request = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(myCars)
+    }
+    await fetch('/cars', request);
+}
+
+sendCard();
