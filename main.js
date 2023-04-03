@@ -13,8 +13,9 @@ fetch('https://apimocha.com/chevroletcars/cars')
       card.innerHTML = `
         <img src="${cars.image}" alt="${cars.descripton}">
         <h2>${cars.name}</h2>
+        <h3>$ ${cars.price}</h3>
         <p>${cars.description}</p>
-        <button>Add to cart</button>
+
       `;
       grid.appendChild(card);
     });
