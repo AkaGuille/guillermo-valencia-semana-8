@@ -12,10 +12,11 @@ fetch('https://apimocha.com/chevroletcars/cars')
       card.classList.add('card');
       card.innerHTML = `
         <img src="${cars.image}" alt="${cars.descripton}">
+        <section class = "text">
         <h2>${cars.name}</h2>
         <h3>$ ${cars.price}</h3>
         <p>${cars.description}</p>
-
+        </section>
       `;
       grid.appendChild(card);
     });
